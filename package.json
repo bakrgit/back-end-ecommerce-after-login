@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon server.js",
-    "start": "SET NODE_ENV=production & node server.js"
+    "start:dev": "nodemon index.js",
+    "start": "SET NODE_ENV=production & node index.js"
   },
   "repository": {
     "type": "git",
@@ -54,6 +54,6 @@
     "prettier": "^2.5.1"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": "18.14.1"
   }
 }
