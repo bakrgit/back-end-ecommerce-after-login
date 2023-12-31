@@ -75,6 +75,9 @@ mountRoutes(app);
 // app.use('/api/v1/wishlist', wishlistRouter);
 // app.use('/api/v1/addresses', addressRouter);
 // app.use('/api/v1/coupons', couponRouter);
+app.get('/home', (req, res) => {
+  res.status(200).json('Welcome, your app is working well');
+})
 
 app.all('*', (req, res, next) => {
   // 3) Use a generic api error
